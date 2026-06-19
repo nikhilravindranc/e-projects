@@ -16,8 +16,8 @@ const EvoqProjectsSubHeader = () => {
     <div
       className="relative"
       style={{
-        background: "#8B5CF6",
-        borderBottom: "1px solid rgba(255,255,255,0.06)",
+        background: "#F5F3FF",
+        borderBottom: "1px solid rgba(124,58,237,0.15)",
       }}
     >
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
@@ -34,7 +34,7 @@ const EvoqProjectsSubHeader = () => {
             >
               <GanttChart className="w-4 h-4 text-white" />
             </div>
-            <span className="text-sm font-bold tracking-tight transition-colors duration-150" style={{ color: "rgba(255,255,255,0.92)" }}>
+            <span className="text-sm font-bold tracking-tight transition-colors duration-150" style={{ color: "#5D1E99" }}>
               EVOQ Projects
             </span>
           </Link>
@@ -51,9 +51,9 @@ const EvoqProjectsSubHeader = () => {
                   key={item.label}
                   href={item.href}
                   className="relative flex items-center px-4 text-[13px] font-semibold transition-colors duration-150 select-none"
-                  style={{ color: isActive ? "#ffffff" : "rgba(255,255,255,0.48)" }}
-                  onMouseEnter={(e) => { if (!isActive) e.currentTarget.style.color = "rgba(255,255,255,0.82)"; }}
-                  onMouseLeave={(e) => { if (!isActive) e.currentTarget.style.color = "rgba(255,255,255,0.48)"; }}
+                  style={{ color: isActive ? "#7C3AED" : "#5D1E99" }}
+                  onMouseEnter={(e) => { if (!isActive) e.currentTarget.style.color = "#7C3AED"; }}
+                  onMouseLeave={(e) => { if (!isActive) e.currentTarget.style.color = "#5D1E99"; }}
                 >
                   {item.label}
                   {isActive && (

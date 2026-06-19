@@ -20,7 +20,7 @@ export default function EvoqProjectsFeaturesPage() {
       <EvoqProjectsSubHeader />
 
       {/* Hero Section */}
-      <section className="py-24 bg-white overflow-hidden">
+      <section className="py-24 overflow-hidden" style={{ background: "#F5F3FF" }}>
         <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
           <div className="flex flex-col lg:flex-row items-center gap-16">
             <div className="lg:w-[48%] flex-shrink-0">
