@@ -578,7 +578,7 @@ export default function EvoqProjectsPage() {
       </section>
 
       {/* Seamless Integration Section */}
-      <section className="py-24 bg-white relative overflow-hidden">
+      <section className="py-16 bg-white relative overflow-hidden">
         <div className="absolute inset-0 opacity-[0.035]" style={{
           backgroundImage: "radial-gradient(circle, #7C3AED 1.5px, transparent 1.5px)",
           backgroundSize: "28px 28px",
@@ -586,18 +586,12 @@ export default function EvoqProjectsPage() {
         <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 relative z-10 overflow-hidden">
           <div className="flex flex-col lg:flex-row items-center gap-12 lg:gap-0 lg:pl-16">
             <div className="lg:w-[55%] flex-shrink-0 lg:pr-20">
-              <div className="inline-flex items-center gap-2 rounded-full px-4 py-1.5 text-xs font-bold uppercase tracking-widest mb-6" style={{ background: "#DDD6FE", color: "#7C3AED" }}>
-                <RefreshCw className="w-3 h-3" /> Connected Ecosystem
-              </div>
               <h2 className="text-4xl font-extrabold text-gray-900 mb-5 leading-[1.15]">
                 Integrations That Support<br />Operational Continuity
               </h2>
-              <p className="text-lg text-gray-500 leading-relaxed mb-8">
+              <p className="text-lg text-gray-500 leading-relaxed">
                 EVOQ Projects integrates with calendars, drives, communication tools, CRMs, and the EVOQ ecosystem to support smoother collaboration, workflow visibility, and coordinated execution across teams and business functions.
               </p>
-              <Button variant="outline" className="font-bold text-sm px-7 py-3 rounded-xl border-2 border-evoq-projects-magenta text-evoq-projects-magenta hover:bg-evoq-projects-magenta hover:text-white transition-all duration-300">
-                See All Integrations <ArrowRight className="ml-2 w-5 h-5" />
-              </Button>
             </div>
 
             {/* Hub-and-spoke integration diagram */}
