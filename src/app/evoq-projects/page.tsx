@@ -759,12 +759,12 @@ export default function EvoqProjectsPage() {
               backgroundSize: "32px 32px",
             }} />
 
-            <div className="relative z-10 flex flex-col items-center text-center justify-between p-10 lg:p-14">
-              <div>
+            <div className="relative z-10 flex flex-col items-center text-center justify-between p-10 lg:p-14 w-full">
+              <div className="w-full">
                 <h2 className="text-3xl lg:text-4xl font-extrabold text-gray-900 leading-[1.2] mb-4">
                   Bring Planning, Execution, and<br />Team Coordination Together
                 </h2>
-                <p className="text-lg leading-relaxed text-gray-900 max-w-2xl mx-auto">
+                <p className="text-lg leading-relaxed text-gray-900">
                   Discover how EVOQ Projects helps organizations improve visibility, coordinate workflows, manage execution, and support teams operating across projects, operations, and business functions.
                 </p>
               </div>
