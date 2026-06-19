@@ -248,27 +248,27 @@ export default function EvoqProjectsFeaturesPage() {
       </section>
 
       {/* CTA Section */}
-      <section className="py-24" style={{ background: "#EEEAFA" }}>
+      <section className="py-24" style={{ background: "white" }}>
         <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
-          <div className="relative rounded-3xl overflow-hidden" style={{ background: "#7C3AED" }}>
+          <div className="relative rounded-3xl overflow-hidden" style={{ background: "#DDD6FE" }}>
             <div className="absolute inset-0 pointer-events-none">
-              <div className="absolute top-0 left-1/2 -translate-x-1/2 w-[600px] h-[280px] opacity-30 blur-3xl rounded-full" style={{ background: "radial-gradient(ellipse, #8B5CF6 0%, transparent 70%)" }} />
+              <div className="absolute top-0 left-1/2 -translate-x-1/2 w-[600px] h-[280px] opacity-15 blur-3xl rounded-full" style={{ background: "radial-gradient(ellipse, #7C3AED 0%, transparent 70%)" }} />
             </div>
-            <div className="absolute inset-0 opacity-[0.05]" style={{ backgroundImage: "radial-gradient(circle, white 1px, transparent 1px)", backgroundSize: "36px 36px" }} />
+            <div className="absolute inset-0 opacity-[0.04]" style={{ backgroundImage: "radial-gradient(circle, #7C3AED 1px, transparent 1px)", backgroundSize: "36px 36px" }} />
             <div className="relative z-10 flex flex-col items-center text-center gap-8 px-12 py-16">
               <div className="max-w-4xl w-full">
-                <h2 className="h2 text-white mb-5" style={{ fontFamily: '"Figtree", sans-serif', fontSize: "38px" }}>
-                  Bring More Structure and Visibility to <span style={{ color: "#A78BFA" }}>Operational Execution</span>
+                <h2 className="h2 text-gray-900 mb-5" style={{ fontFamily: '"Figtree", sans-serif', fontSize: "38px" }}>
+                  Bring More Structure and Visibility to <span style={{ color: "#7C3AED" }}>Operational Execution</span>
                 </h2>
-                <p className="body-large text-white/70" style={{ fontFamily: '"DM Sans", sans-serif' }}>
+                <p className="body-large text-gray-600" style={{ fontFamily: '"DM Sans", sans-serif' }}>
                   Discover how EVOQ Projects helps teams coordinate workflows, improve accountability, manage operational activities, and maintain visibility across ongoing work.
                 </p>
               </div>
               <div className="flex flex-row gap-4">
-                <Button size="lg" className="font-bold text-base px-9 py-5 rounded-2xl text-white transition-all hover:scale-[1.02]" style={{ background: "#8B5CF6", boxShadow: "0 8px 24px rgba(139,92,246,0.4)" }}>
+                <Button size="lg" className="font-bold text-base px-9 py-5 rounded-2xl text-white transition-all hover:scale-[1.02]" style={{ background: "#7C3AED", boxShadow: "0 8px 24px rgba(124,58,237,0.3)" }}>
                   Book a Demo <ArrowRight className="ml-2 w-5 h-5" />
                 </Button>
-                <Button size="lg" variant="outline" className="bg-transparent border-2 border-white/30 text-white hover:bg-white/10 hover:border-white/60 transition-all rounded-2xl font-semibold">
+                <Button size="lg" variant="outline" className="transition-all rounded-2xl font-semibold" style={{ border: "1.5px solid #7C3AED", color: "#7C3AED" }}>
                   View Pricing
                 </Button>
               </div>
