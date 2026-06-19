@@ -32,7 +32,7 @@ const Header = () => {
   return (
     <header className="sticky top-0 z-50" style={{ background: "linear-gradient(90deg, #EEF1FF 0%, #F3F0FF 100%)" }}>
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
-        <div className="flex items-center justify-between h-20">
+        <div className="flex items-center justify-between h-24">
 
           {/* ── Logo ── */}
           <Link href="/" className="flex items-center flex-shrink-0 select-none">
@@ -42,14 +42,16 @@ const Header = () => {
           </Link>
 
           {/* ── Desktop nav ── */}
-          <nav className="hidden md:flex items-center gap-1 rounded-full px-1.5 py-1.5" style={{ background: "rgba(255,255,255,0.55)" }}>
+          <nav className="hidden md:flex items-center gap-1 rounded-full px-1.5 py-1.5" style={{ background: "#DDD6FE" }}>
 
             {/* Products dropdown */}
             <div className="relative" ref={dropdownRef}>
               <button
                 onClick={() => setProductsOpen(!productsOpen)}
                 className="flex items-center gap-1.5 text-sm font-medium text-gray-700 hover:text-[#0F0F1A] transition-colors rounded-full px-4 py-2"
-                style={{ background: "rgba(255,255,255,0.85)" }}
+                style={{ background: "transparent" }}
+                onMouseEnter={(e) => { e.currentTarget.style.background = "#F5F3FF"; }}
+                onMouseLeave={(e) => { e.currentTarget.style.background = "transparent"; }}
               >
                 Products
                 <ChevronDown
@@ -87,7 +89,12 @@ const Header = () => {
             </div>
 
             {/* Why EVOQ? */}
-            <Link href="/why-evoq" className="text-sm font-medium text-gray-700 hover:text-[#0F0F1A] transition-colors rounded-full px-4 py-2">
+            <Link
+              href="/why-evoq"
+              className="text-sm font-medium text-gray-700 hover:text-[#0F0F1A] transition-colors rounded-full px-4 py-2"
+              onMouseEnter={(e) => { e.currentTarget.style.background = "#F5F3FF"; }}
+              onMouseLeave={(e) => { e.currentTarget.style.background = "transparent"; }}
+            >
               Why EVOQ?
             </Link>
           </nav>
@@ -101,7 +108,7 @@ const Header = () => {
             >
               Contact Us
               <span className="w-7 h-7 rounded-full flex items-center justify-center" style={{ background: "rgba(255,255,255,0.2)" }}>
-                <ArrowRight className="w-4 h-4" style={{ color: "#C4B5FD" }} />
+                <ArrowRight className="w-4 h-4" style={{ color: "#FFFFFF" }} />
               </span>
             </Button>
           </div>
