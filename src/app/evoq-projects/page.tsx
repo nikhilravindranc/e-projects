@@ -1,7 +1,7 @@
 "use client";
 
 import { useState } from "react";
-import { AnimatePresence } from "framer-motion";
+import { AnimatePresence, motion } from "framer-motion";
 import Link from "next/link";
 import Header from "@/components/Header";
 import EvoqProjectsSubHeader from "@/components/EvoqProjectsSubHeader";
@@ -128,7 +128,12 @@ export default function EvoqProjectsPage() {
   ];
 
   return (
-    <div className="min-h-screen flex flex-col">
+    <motion.div
+      className="min-h-screen flex flex-col"
+      initial={{ opacity: 0 }}
+      animate={{ opacity: 1 }}
+      transition={{ duration: 0.5 }}
+    >
       <DemoModal open={showDemo} onClose={() => setShowDemo(false)} />
       <Header />
       <EvoqProjectsSubHeader />
@@ -788,6 +793,6 @@ export default function EvoqProjectsPage() {
       </section>
 
       <EvoqProjectsFooter />
-    </div>
+    </motion.div>
   );
 }

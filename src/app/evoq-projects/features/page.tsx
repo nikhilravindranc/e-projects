@@ -1,5 +1,6 @@
 "use client";
 
+import { motion } from "framer-motion";
 import type { ElementType } from "react";
 import Header from "@/components/Header";
 import EvoqProjectsSubHeader from "@/components/EvoqProjectsSubHeader";
@@ -15,7 +16,12 @@ import {
 export default function EvoqProjectsFeaturesPage() {
 
   return (
-    <div className="min-h-screen flex flex-col">
+    <motion.div
+      className="min-h-screen flex flex-col"
+      initial={{ opacity: 0 }}
+      animate={{ opacity: 1 }}
+      transition={{ duration: 0.5 }}
+    >
       <Header />
       <EvoqProjectsSubHeader />
 
@@ -278,6 +284,6 @@ export default function EvoqProjectsFeaturesPage() {
       </section>
 
       <EvoqProjectsFooter />
-    </div>
+    </motion.div>
   );
 }
