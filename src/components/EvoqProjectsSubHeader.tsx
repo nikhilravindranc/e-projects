@@ -14,7 +14,7 @@ const EvoqProjectsSubHeader = () => {
 
   return (
     <div
-      className="relative"
+      className="sticky top-0 z-50"
       style={{
         background: "#F5F3FF",
         borderBottom: "1px solid rgba(124,58,237,0.15)",
