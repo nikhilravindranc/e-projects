@@ -579,20 +579,55 @@ export default function EvoqProjectsPage() {
 
       {/* Seamless Integration Section */}
       <section className="py-16 bg-white relative overflow-hidden">
-        <div className="absolute inset-0 opacity-[0.035]" style={{
-          backgroundImage: "radial-gradient(circle, #7C3AED 1.5px, transparent 1.5px)",
-          backgroundSize: "28px 28px",
-        }} />
-        <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 relative z-10 overflow-hidden">
-          <div className="flex flex-col lg:flex-row items-center gap-12 lg:gap-0 lg:pl-16">
-            <div className="lg:w-[55%] flex-shrink-0 lg:pr-20">
-              <h2 className="text-4xl font-extrabold text-gray-900 mb-5 leading-[1.15]">
-                Integrations That Support<br />Operational Continuity
-              </h2>
-              <p className="text-lg text-gray-500 leading-relaxed">
-                EVOQ Projects integrates with calendars, drives, communication tools, CRMs, and the EVOQ ecosystem to support smoother collaboration, workflow visibility, and coordinated execution across teams and business functions.
-              </p>
+        <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 relative z-10">
+          <div
+            className="relative rounded-3xl overflow-hidden"
+            style={{ background: "linear-gradient(135deg, #2A0E52 0%, #4C1D95 55%, #5D1E99 100%)" }}
+          >
+            {/* Radiating diagonal bars — bottom-right burst */}
+            <div className="absolute inset-0 overflow-hidden pointer-events-none">
+              <div
+                className="absolute"
+                style={{
+                  right: "-12%",
+                  bottom: "-30%",
+                  width: 560,
+                  height: 560,
+                }}
+              >
+                {Array.from({ length: 16 }).map((_, i) => (
+                  <div
+                    key={i}
+                    className="absolute"
+                    style={{
+                      left: "50%",
+                      top: "50%",
+                      width: 16,
+                      height: 130,
+                      background: i % 3 === 0 ? "#A78BFA" : i % 3 === 1 ? "#7C3AED" : "#C4B5FD",
+                      opacity: 0.55,
+                      borderRadius: 3,
+                      transformOrigin: "center 230px",
+                      transform: `translate(-50%, -100%) rotate(${i * (360 / 16)}deg)`,
+                    }}
+                  />
+                ))}
+              </div>
             </div>
+            <div className="absolute inset-0 opacity-[0.08] pointer-events-none" style={{
+              backgroundImage: "radial-gradient(circle, #ffffff 1.5px, transparent 1.5px)",
+              backgroundSize: "28px 28px",
+            }} />
+
+            <div className="relative z-10 flex flex-col lg:flex-row items-center gap-12 lg:gap-0 p-10 lg:p-16">
+              <div className="lg:w-[55%] flex-shrink-0 lg:pr-16">
+                <h2 className="text-4xl font-extrabold text-white mb-5 leading-[1.15]">
+                  Integrations That Support<br />Operational Continuity
+                </h2>
+                <p className="text-lg leading-relaxed" style={{ color: "rgba(255,255,255,0.65)" }}>
+                  EVOQ Projects integrates with calendars, drives, communication tools, CRMs, and the EVOQ ecosystem to support smoother collaboration, workflow visibility, and coordinated execution across teams and business functions.
+                </p>
+              </div>
 
             {/* Hub-and-spoke integration diagram */}
             <div className="lg:flex-1 flex items-center justify-center py-4">
@@ -712,6 +747,7 @@ export default function EvoqProjectsPage() {
                   )
                 )}
               </div>
+            </div>
             </div>
           </div>
         </div>
