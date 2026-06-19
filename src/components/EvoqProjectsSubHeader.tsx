@@ -21,7 +21,7 @@ const EvoqProjectsSubHeader = () => {
       }}
     >
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
-        <div className="flex items-stretch h-20 gap-8">
+        <div className="flex items-stretch h-20 gap-8" style={{ marginLeft: "96px" }}>
 
           {/* ── Logo → links to overview ── */}
           <Link href="/evoq-projects" className="flex items-center gap-2.5 flex-shrink-0 group py-3">
