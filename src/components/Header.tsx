@@ -30,9 +30,9 @@ const Header = () => {
   }, []);
 
   return (
-    <header className="sticky top-0 z-50 border-b border-gray-100 shadow-sm" style={{ background: "#F5F3FF" }}>
+    <header className="sticky top-0 z-50" style={{ background: "linear-gradient(90deg, #EEF1FF 0%, #F3F0FF 100%)" }}>
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
-        <div className="flex items-center justify-between h-16">
+        <div className="flex items-center justify-between h-20">
 
           {/* ── Logo ── */}
           <Link href="/" className="flex items-center flex-shrink-0 select-none">
@@ -42,13 +42,14 @@ const Header = () => {
           </Link>
 
           {/* ── Desktop nav ── */}
-          <nav className="hidden md:flex items-center gap-6">
+          <nav className="hidden md:flex items-center gap-1 rounded-full px-1.5 py-1.5" style={{ background: "rgba(255,255,255,0.55)" }}>
 
             {/* Products dropdown */}
             <div className="relative" ref={dropdownRef}>
               <button
                 onClick={() => setProductsOpen(!productsOpen)}
-                className="flex items-center gap-1 text-sm font-medium text-gray-700 hover:text-[#0F0F1A] transition-colors"
+                className="flex items-center gap-1.5 text-sm font-medium text-gray-700 hover:text-[#0F0F1A] transition-colors rounded-full px-4 py-2"
+                style={{ background: "rgba(255,255,255,0.85)" }}
               >
                 Products
                 <ChevronDown
@@ -74,7 +75,7 @@ const Header = () => {
                         onClick={() => setProductsOpen(false)}
                         className="flex flex-col px-3.5 py-2.5 rounded-xl transition-colors hover:bg-gray-50 group"
                       >
-                        <span className="text-sm font-semibold text-[#0F0F1A] group-hover:text-[#7C3AED]">
+                        <span className="text-sm font-semibold text-[#0F0F1A] group-hover:text-[#1B4FD8]">
                           {p.name}
                         </span>
                         <span className="text-xs text-gray-400 mt-0.5">{p.desc}</span>
@@ -86,12 +87,12 @@ const Header = () => {
             </div>
 
             {/* Why EVOQ? */}
-            <Link href="/why-evoq" className="text-sm font-medium text-gray-700 hover:text-[#0F0F1A] transition-colors">
+            <Link href="/why-evoq" className="text-sm font-medium text-gray-700 hover:text-[#0F0F1A] transition-colors rounded-full px-4 py-2">
               Why EVOQ?
             </Link>
 
             {/* Contact Us */}
-            <Link href="/contact" className="text-sm font-medium text-gray-700 hover:text-[#0F0F1A] transition-colors">
+            <Link href="/contact" className="text-sm font-medium text-gray-700 hover:text-[#0F0F1A] transition-colors rounded-full px-4 py-2">
               Contact Us
             </Link>
           </nav>
@@ -103,11 +104,13 @@ const Header = () => {
             </Button>
             <Button
               size="sm"
-              className="font-semibold text-white rounded-lg px-4"
-              style={{ background: "#0F0F1A" }}
+              className="font-semibold text-white rounded-full pl-5 pr-1.5 py-1.5 h-auto flex items-center gap-2"
+              style={{ background: "#1B4FD8" }}
             >
               Get Started
-              <ArrowRight className="ml-1 w-4 h-4" />
+              <span className="w-7 h-7 rounded-full flex items-center justify-center" style={{ background: "rgba(255,255,255,0.2)" }}>
+                <ArrowRight className="w-4 h-4" />
+              </span>
             </Button>
           </div>
 
